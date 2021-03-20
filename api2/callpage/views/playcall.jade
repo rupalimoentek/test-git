@@ -1,0 +1,5 @@
+extends layout
+
+block content
+	h1 LogMyCalls audio file
+	audio(preload="auto" controls autoplay)(source id="source" src=s3url type="audio/mpeg")

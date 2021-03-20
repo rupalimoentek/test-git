@@ -1,0 +1,1 @@
+CREATE RULE get_pkey_on_insert AS ON INSERT TO phone_number DO SELECT currval('phone_number_phone_number_id_seq'::text) AS phone_number_id;

@@ -1,0 +1,2 @@
+-- for schedule DB
+ALTER TABLE schedule ALTER COLUMN next_run_date SET DATA TYPE TIMESTAMP(0) WITH TIME ZONE;

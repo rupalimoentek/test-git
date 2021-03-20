@@ -1,0 +1,5 @@
+development:
+  host: <<host>>
+  db_name: <<db_name>>
+  api_db_name: <<api_db_name>>
+  port: 27017

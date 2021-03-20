@@ -1,0 +1,9 @@
+call_flows:
+ types:
+  simple: SimpleRoute
+  ivr: IvrRoute2
+  outbound: OutboundRoute
+  schedule: ScheduleRoute
+  geo: GeoRoute
+  voicemail: VoicemailRoute
+  PercentageBasedRoute: PercentageBasedRoute

@@ -1,0 +1,214 @@
+{
+	"params" :
+	{
+		"id" :
+			{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"ids" :
+			{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "array",
+			"ignore" : true,
+			"min_length" : 1,
+			"array_element_type" : "integer"
+		},
+		"route_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["geo", "ivr", "simple","PercentageBasedRoute", "outbound","voicemail","schedule"]
+		},
+		"name" :
+		{
+		"required" :
+		{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"repeat_interval" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"call_value" :
+		{
+			"required" :
+			{
+			"insert" : false,
+			"update" : false
+			},
+			"type" : "integer"
+		},
+		"post_IVR_enabled" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"schedule_data" :{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "object"
+		},
+		"pin" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"callerid" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		}
+	},
+	"extended_params" :
+	{
+		"call_flow" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "json",
+			"validator" : "callflow"
+		},
+		"channel" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "json",
+			"filename" : "provisioned_route_channel"
+		},
+		"dni_setting" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "json",
+			"filename" : "dni_setting"
+		},
+		"phone_number" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "json",
+			"validator" : "phoneNumber"
+		},
+		"geo_route" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json",
+			"validator" : "geoRoute"
+		},
+		"geo_options" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json",
+			"filename" : "provisioned_route_geo_option"
+		},
+		"ivrs" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "array",
+			"min_length" : 1,
+			"validator" : "ivr"
+		},
+		"multiIvrs" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json"
+		},
+		"ringto_percentage" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "array",
+			"min_length" : 1,
+			"validator" : "ringtoPercentage"
+		},
+		"number_pool" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "json",
+			"filename" : "provisioned_route_number_pool"
+		}
+	}
+}

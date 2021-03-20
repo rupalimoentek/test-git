@@ -1,0 +1,1 @@
+ALTER TABLE org_billing ALTER allow_admin SET DEFAULT true

@@ -1,0 +1,11 @@
+{
+	"map" : {
+		"id" : "analytic_id",
+		"org_unit_id" : "org_unit_id",
+		"duration" : "duration",
+		"tracking_id" : "tracking_id",
+		"all_routes" : "all_routes",
+		"all_calls" : "all_calls",
+		"status" : "analytic_status"
+	}
+}

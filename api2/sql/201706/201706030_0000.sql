@@ -1,0 +1,1 @@
+INSERT into indicator (indicator_id, indicator_name, indicator_active) VALUES (51, 'Leads', TRUE)

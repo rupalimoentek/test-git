@@ -1,0 +1,17 @@
+{
+	"key_map" :{
+		"location" : "location_route_location",
+		"address" : "location_route_address",
+		"city" : "location_route_city",
+		"state" : "location_route_state",
+		"zip" : "location_route_zip",
+		"phone" : "location_route_target",
+		"claimed_states" : "location_route_claimed_states",
+		"claimed_zip" : "location_route_claimed_zip",
+		"latitude" : "location_route_latitude",
+		"longitude" : "location_route_longitude",
+		"location_id" : "location_id",
+		"location_ivr_route_id" : "location_ivr_route_id",
+		"id" : "location_route_id"
+	}
+}

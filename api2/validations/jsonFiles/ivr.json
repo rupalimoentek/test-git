@@ -1,0 +1,159 @@
+{
+	"params" :
+	{
+		"value" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer",
+			"values" : [1,2,3,4,5,6,7,8,9,10]
+		},
+		"default_ringto" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"ignore" : false,
+			"type" : "call_flow_phone_number"
+		},
+		"target_did" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"ignore" : false,
+			"type" : "call_flow_phone_number"
+		},
+		"ouid" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"message_enabled" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"webhook_enabled" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"play_disclaimer" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string",
+			"values" : ["before", "never" , "after"]
+		},
+		"record_enabled" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"message_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"message" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"route_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["geo"],
+			"ignore" : true
+		},
+		"name" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+		},
+		"action_order" : 
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer",
+			"values" : [0,1,2,3,4,5,6,7,8,9,10]
+		}
+	},
+	"extended_params" :
+	{
+		"geo_route" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json",
+			"validator" : "geoRoute"
+		},
+		"geo_options" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json",
+			"filename" : "provisioned_route_geo_option"
+		}
+	}
+}

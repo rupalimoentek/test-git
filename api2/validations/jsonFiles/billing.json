@@ -1,0 +1,120 @@
+{
+    "params" : {
+        "activation_date" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "cycle_start" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "cycle_end" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "billing_account_id" : {
+            "required" : {
+                "insert" : true,
+                "update" : false
+            },
+            "type" : "string"
+        },
+        "prev_invoice_date" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "prev_invoice_amount" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "currency"
+        },
+        "data_append" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "boolean"
+        },
+        "org_unit_id" : {
+            "required" : {
+                "insert" : true,
+                "update" : false
+            },
+            "type" : "integer"
+        },
+        "allow_admin" : {
+            "required" : {
+                "insert" : true,
+                "update" : false
+            },
+            "type" : "boolean"
+        },
+        "billing_date" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "payment_date" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "billing_code" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "string"
+        },
+        "account_code" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "string"
+        },
+        "count_start" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        }
+    },
+    "extended_params" : {
+        "count_total" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "json",
+            "filename" : "billing_count"
+        },
+        "subscription" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "json",
+            "filename" : "billing_subscription"
+        }
+    }
+}

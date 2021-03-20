@@ -1,0 +1,58 @@
+{
+	"params" :
+	{
+		"value" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer",
+			"values" : [0,1,2,3,4,5,6,7,8,9]
+		},
+		"target_did" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "phone_number"
+		},
+		"ouid" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"message_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"activate_if_present" : ["self", "message"],
+			"ignore" : true,
+			"type" : "string",
+			"values" : ["text", "file"]
+		},
+		"message" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "string"
+		}
+
+
+
+	}
+}

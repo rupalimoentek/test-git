@@ -1,0 +1,6 @@
+development:
+  host: <<host>>
+  shared_key: <<shared_key>>
+  username: <<username>>
+  password: <<password>>
+

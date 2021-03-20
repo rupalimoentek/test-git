@@ -1,0 +1,61 @@
+{
+	"params" :
+	{
+		"ids" :
+		{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "array",
+			"ignore" : true,
+			"min_length" : 1,
+			"array_element_type" : "integer"
+		}
+	},
+	"extended_params" :
+	{
+		"users" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "json",
+			"filename" : "campaign_users"
+		},
+		"campaign" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "json",
+			"filename" : "provisioned_route_campaign"
+		},
+		"call_flows" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "array",
+			"min_length" : 1,
+			"validator" : "provisionedroute"
+		},
+		"call_flow_recording" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : true,
+			"type" : "json",
+			"filename" : "call_flow_route_link"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+development:
+  bucket: <<bucket>>
+  access_key_id: <<access_key_id>>
+  secret_access_key: <<secret_access_key>>
+  message_bucket: <<message_bucket>>
+  message_access_key_id: <<message_access_key_id>>
+  message_secret_access_key: <<message_secret_access_key>>
+  whitelabel_bucket: <<whitelabel_bucket>>
+  sp_message_bucket: <<sp_message_bucket>>
+  prompt_message_key: <<prompt_message_key>>
+  whisper_message_key: <<whisper_message_key>>
+  voicemail_message_key: <<voicemail_message_key>>

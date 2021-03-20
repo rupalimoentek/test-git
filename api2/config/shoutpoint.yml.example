@@ -1,0 +1,5 @@
+development:
+  hostname: <<hostname>>
+  path:  <<path>>
+  Key:  <<Key>>
+

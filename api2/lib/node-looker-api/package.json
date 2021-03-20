@@ -1,0 +1,44 @@
+{
+  "_from": "node-looker-api",
+  "_id": "node-looker-api@3.1.9",
+  "_inBundle": false,
+  "_integrity": "sha1-GD5farCqB/XaumF/Yf0YLky2Yvc=",
+  "_location": "/node-looker-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-looker-api",
+    "name": "node-looker-api",
+    "escapedName": "node-looker-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-looker-api/-/node-looker-api-3.1.9.tgz",
+  "_shasum": "183e5f6ab0aa07f5daba617f61fd182e4cb662f7",
+  "_spec": "node-looker-api",
+  "_where": "/var/www/html/api2",
+  "bundleDependencies": false,
+  "dependencies": {
+    "superagent": "1.7.1"
+  },
+  "deprecated": false,
+  "description": "API wrapper for Looker API3 - OAuth2",
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  },
+  "license": "EULA",
+  "main": "src/index.js",
+  "name": "node-looker-api",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "version": "3.1.9"
+}

@@ -1,0 +1,31 @@
+development:
+  adapter: <<adapter>>
+  database: <<database>>
+  host: localhost
+  port: 5432
+  username: <<username>>
+  password: <<password>>
+  timeout: 5000
+  reconnect: true
+ct_script_development:
+  database: <<database>>
+  host: <<host>>
+  port: 5432
+  username: <<username>>
+  password: <<password>>
+callengine_development:
+  host: <<host>>
+  database: <<database>>
+  username: <<username>>
+  password: <<password>>
+  pool: 250
+lmc_development:
+  database: <<database>>
+  host: <<host>>
+  port: 5432
+  username: <<username>>
+  password: <<password>>
+  timeout: 5000
+  dateStrings: true
+  reconnect: true
+

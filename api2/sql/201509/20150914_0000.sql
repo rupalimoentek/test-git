@@ -1,0 +1,17 @@
+-- Adding new ENUM type to disposition_type
+ALTER TYPE disposition_type ADD VALUE 'HANGUP' AFTER 'NONE';
+
+-- Change log timestamps to be accurate to 1000th of a second
+ALTER TABLE log_billing ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_call_action ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_call_flow ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_campaign ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_integration ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_ivr ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_tag ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_user ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+ALTER TABLE log_webhook ALTER COLUMN log_date SET DATA TYPE TIMESTAMP(3) WITH TIME ZONE;
+
+-- adding new vendor records
+UPDATE phone_vendor SET vendor_id=9999 WHERE vendor_id=9;
+INSERT INTO phone_vendor (vendor_id, vendor_name) VALUES ('9', 'SMS800_L3'), ('10', 'SMS800_BW');

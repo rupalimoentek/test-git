@@ -1,0 +1,29 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "string"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "integer"
+		},
+		"custom_source_name" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "string"
+		}
+	}
+}

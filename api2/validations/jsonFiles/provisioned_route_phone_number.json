@@ -1,0 +1,26 @@
+{
+	"params" : {
+		"id": {
+			"required": {
+				"insert": true,
+				"update": true
+			},
+			"type": "integer"
+		},
+		"vendor_id": {
+			"required": {
+				"insert": true,
+				"update": true
+			},
+			"type": "integer"
+		},
+		"source":
+		{
+			"required": {
+				"insert": true,
+				"update": true
+			},
+			"type": "string"
+		}
+	}
+}

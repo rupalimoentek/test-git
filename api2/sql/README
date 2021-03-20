@@ -1,0 +1,14 @@
+This directory contains all changes, additions, and population of the PostgreSQL DB for
+project codename Crouching Tiger.  The idea of this is to be able to keep many copies
+of the database in sync with each other, while still enabling different environments
+to operate at different release points. This is relevant not just for the development
+and staging platforms, although they are both directly updated using these scripts, but
+for each developers locally running DB instance - should they have one.
+
+It is key that all needed DB changes be included in these files and that they be in sequence,
+so that should anyone for any reason want a current version of the DB, all that need be done
+is run all of the query files in chronological order and they will have a working copy of the
+DB.  The naming convention of the files uses the date and version (or hour and minute) as the
+filename in the format of YYYYMMDD_vvvv.sql or by time if you like YYYYMMDD_hhmm.sql
+
+Please insure that you SQL statement that you save in these files will execute correctly.

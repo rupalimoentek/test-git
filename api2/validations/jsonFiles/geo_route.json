@@ -1,0 +1,62 @@
+{
+	"params" :
+	{
+		"id" :
+			{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "array"
+		},
+		"strategy" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string",
+			"values" : ["Zipcode", "Claimed", "Npa", "claimedState"]
+		},
+		"radius" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"ignore" : false,
+			"type" : "float"
+		},
+		"message_enabled" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"message_type" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["text", "file"]
+		},
+		"message" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		}
+	}
+}

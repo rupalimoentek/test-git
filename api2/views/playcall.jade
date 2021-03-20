@@ -1,0 +1,5 @@
+extends layout
+
+block content
+	h1 Listen To Call Recording
+	audio(preload="auto" controlsList=downloadSetting controls autoplay)(source id="source" src=s3url type="audio/mpeg")

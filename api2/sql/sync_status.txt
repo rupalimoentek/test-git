@@ -1,0 +1,22 @@
+# This file should be used to keep track of which SQL files have been executed on what platforms.
+# Please update the timestamp and specify the last file ran and on which environment when updating
+
+CFA Development
+    Last file executed: 20151207_0000.sql
+    Executed by:        Davey
+    Executed on:        2015-12-07
+
+CFA Staging 1
+    Last file executed: 20151207_0000.sql
+    Executed by:        Davey
+    Executed on:        2015-12-07
+
+CFA Staging 2 (Production Staging)
+    Last file executed: 20160217_0000.sql
+    Executed by:        Davey
+    Executed on:        2016-01-08
+
+CMO Production
+    Last file executed: 20160407_0000.sql
+    Executed by:        Carlos
+    Executed on:        2016-05-11

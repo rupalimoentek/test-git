@@ -1,0 +1,1 @@
+CREATE RULE get_pkey_on_insert AS ON INSERT TO tag DO SELECT currval('tag_tag_id_seq'::text) AS tag_id;

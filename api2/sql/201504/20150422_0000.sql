@@ -1,0 +1,2 @@
+ALTER TABLE call_tag ADD COLUMN ct_user_id INT REFERENCES ct_user (ct_user_id) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE call_tag ADD COLUMN call_tag_created TIMESTAMP(0) without time zone NOT NULL DEFAULT CURRENT_TIMESTAMP;

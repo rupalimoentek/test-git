@@ -1,0 +1,14 @@
+{
+	"params" :
+	{
+		"campaignIds" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "json"
+		}
+	}
+}

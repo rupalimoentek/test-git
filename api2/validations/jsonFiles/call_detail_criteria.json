@@ -1,0 +1,97 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "integer"
+		},
+		"external_id" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "string"
+		},
+		"ouid" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "integer"
+		},
+		"external_ouid" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "integer"
+		},
+		"tracking_number" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "get_call_detail_phone_number",
+			"min_length" : 3,
+			"max_length" : 11
+		},
+		"extended" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "boolean"
+		},
+		"ringto_number" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "get_call_detail_phone_number",
+			"min_length" : 3,
+			"max_length" : 11
+		},
+		"start_calldate" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "get_call_detail_date"
+		},
+		"end_calldate" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "get_call_detail_date"
+		},
+		"tags" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "commaSeparatedString"
+		},
+		"dni" :
+		{
+			"required" :
+			{
+				"read" : false
+			},
+			"type" : "boolean"
+		}
+	}
+}

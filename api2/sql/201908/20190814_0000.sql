@@ -1,0 +1,1 @@
+ALTER TABLE log_score_card ALTER COLUMN score_card_id DROP NOT NULL;

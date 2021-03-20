@@ -1,0 +1,81 @@
+{
+	"params" :
+	{
+		"conversation_id" :
+		{
+			"required" :
+			{
+				"update" : true,
+				"insert" : true,
+				"status" : true
+			},
+			"type" : "integer"
+		},
+		"ct_user_id" :
+		{
+			"required" :
+			{
+				"update" : false,
+				"insert" : true,
+				"status" : false
+			},
+			"type" : "integer"
+		},
+		"tracking_number" :
+		{
+			"required" :
+			{
+				"update" : false,
+				"insert" : true,
+				"status" : false
+			},
+			"type" : "integer"
+		},
+		"caller_id" :
+		{
+			"required" :
+			{
+				"update" : false,
+				"insert" : true,
+				"status" : false
+			},
+			"type" : "integer"
+		},
+		"message" :
+		{
+			"required" :
+			{
+				"update" : false,
+				"insert" : true,
+				"status" : false
+			},
+			"type" : "string"
+		},
+		"conversation_status" :
+		{
+			"required" :
+			{
+				"update" : false,
+				"status" : true
+			},
+			"type" : "string",
+			"values" : ["read", "unread", "deleted", "replied"]
+		},
+		"label" : {
+			"required" : 
+			{
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"timezone" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		}
+	}
+}

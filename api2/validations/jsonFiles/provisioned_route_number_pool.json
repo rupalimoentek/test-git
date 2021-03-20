@@ -1,0 +1,23 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+			"insert" : true,
+			"update" : true
+			},
+			"type" : "integer"
+		},
+		"number_quantity" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		}
+	}
+}

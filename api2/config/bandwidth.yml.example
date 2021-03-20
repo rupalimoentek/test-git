@@ -1,0 +1,6 @@
+development:
+  hostname:  <<hostname>>
+  path:  <<path>>
+  username: <<username>>
+  password: <<password>>
+  site_id: <<site_id>>

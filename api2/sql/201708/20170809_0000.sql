@@ -1,0 +1,1 @@
+ALTER TABLE call ADD COLUMN encrypted_source character varying(120);

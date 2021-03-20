@@ -1,0 +1,16 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+			"insert" : true,
+			"update" : true
+			},
+			"type" : "array",
+			"min_length" : 1,
+			"array_element_type" : "integer"
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+			"insert" : false,
+			"update" : false
+			},
+			"ignore" : true,
+			"type" : "integer"
+		},
+		"number" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"ignore" : true,
+			"type" : "phone_number"
+		},
+		"vendor_id" :
+		{
+			"required" :
+			{
+			"insert" : true,
+			"update" : true
+			},
+			"type" : "integer"
+			
+		},
+		"source" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+		},
+		"number_ou_id":
+		{
+			"required": {
+				"insert": false,
+				"update": false
+			},
+			"type": "integer"
+		}
+	}
+}

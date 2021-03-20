@@ -1,0 +1,1 @@
+ALTER TABLE tag DROP CONSTRAINT tag_tag_name_key ;

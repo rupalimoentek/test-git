@@ -1,0 +1,1 @@
+ALTER TABLE doubleclick_call ALTER column gclid TYPE char(256);

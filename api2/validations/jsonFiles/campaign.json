@@ -1,0 +1,120 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true,
+				"status" : true
+			},
+			"type" : "integer"
+		},
+		"name" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false,
+				"status" : false
+			},
+			"type" : "integer"
+		},
+		"external_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"start_date" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "datetime"
+		},
+		"end_date" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "datetime"
+		},
+		"status" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false,
+				"status" : true
+			},
+			"type" : "string",
+			"values" : ["active", "inactive", "deleted"]
+		},
+		"owner_user_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"timezone" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+		}
+	},
+	"extended_params" :
+	{
+		"users" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "json",
+			"filename" : "campaign_users"
+		},
+		"referral" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "json"
+		},
+		"isCallFromMigrationTool" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		}
+	}
+}

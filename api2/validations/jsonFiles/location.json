@@ -1,0 +1,41 @@
+{
+	"params" :
+	{
+		"ids" :
+			{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "array",
+			"min_length" : 1,
+			"array_element_type" : "integer"
+		},
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "integer"
+		},
+		"name" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"max_length" : 100
+		}
+	}
+}

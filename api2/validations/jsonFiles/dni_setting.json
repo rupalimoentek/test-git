@@ -1,0 +1,87 @@
+{
+	"params" :
+	{
+		"dni_setting_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"provisioned_route_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"destination_url" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"dni_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["url","session","source"]
+		},
+		"referrer_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"referrer" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"dni_element" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"dni_ttl" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		}
+	}
+}

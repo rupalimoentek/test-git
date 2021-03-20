@@ -1,0 +1,16 @@
+{
+	"params" :
+	{
+		"location_ids" :
+			{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "array",
+			"array_element_type" : "integer",
+			"min_length" : 1
+		}
+	}
+}

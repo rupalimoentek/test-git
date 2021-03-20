@@ -1,0 +1,92 @@
+{
+    "params" : {
+        "doubleclick_id" : {
+            "required" : {
+                "insert" : false,
+                "update" : true
+            },
+            "type" : "integer"
+        },
+        "org_unit_id" : {
+            "required" : {
+                "insert" : true,
+                "update" : false
+            },
+            "type" : "integer"
+        },
+        "conversion_type" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "string",
+            "values" : [ "action", "transaction" ]
+        },
+        "min_call_duration" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "integer"
+        },
+        "indicator_id" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "integer"
+        },
+        "metric_threshold" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "integer"
+        },
+        "default_floodlight" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "string"
+        },
+        "currency" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "string"
+        },
+        "dc_active" : {
+            "required" : {
+                "insert" : true,
+                "update" : false
+            },
+            "type" : "boolean"
+        },
+        "created" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "datetime"
+        },
+        "all_call" : {
+            "required" : {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "boolean"
+        },
+        "extended_params" : {
+            "map": {
+                "required" : {
+                    "insert" : false,
+                    "update" : false
+                },
+                "type" : "json",
+                "filename" : "doubleclick_map"
+            }
+        }
+    }
+}

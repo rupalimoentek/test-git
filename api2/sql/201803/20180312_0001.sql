@@ -1,0 +1,3 @@
+Update subscription_component set component_ext_id ='2c92a0fd5d5ea18b015d60c95e3c5619' where component_ext_id ='2c92a0f94d5239ac014d5643f979094d';
+Update subscription_component set component_ext_id ='2c92a0fd5d5ea18b015d60c95e64561c' where component_ext_id ='2c92a0fb4d5241e5014d5643c9fd623f';
+Update subscription_component set component_ext_id ='2c92a0fd5d5ea18b015d60c95e935620' where component_ext_id ='2c92a0f94f734496014f85674b6d34f8';

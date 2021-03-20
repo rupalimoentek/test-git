@@ -1,0 +1,10 @@
+{
+    "staging": {
+        "termType": "EVERGREEN",
+        "productRatePlanId": "<<productRatePlanId>>",
+        "productRatePlanChargeId": "<<productRatePlanChargeId>>",
+        "collect": false,
+        "subscriptionId": 9
+    }
+}
+

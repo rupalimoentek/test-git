@@ -1,0 +1,41 @@
+{
+    "params": {
+        "doubleclick_id": {
+            "required": {
+                "insert": true,
+                "update": false,
+                "delete": true
+            },
+            "type": "integer"
+        },
+        "dc_map_id": {
+            "required": {
+                "insert": false,
+                "update": true,
+                "delete": true
+            },
+            "type": "integer"
+        },
+        "floodlight_var": {
+            "required": {
+                "insert": false,
+                "update": false
+            },
+            "type": "string"
+        },
+        "created": {
+            "required": {
+                "insert": false,
+                "update": false
+            },
+            "type": "datetime"
+        },
+        "map_id": {
+            "required": {
+                "insert": true,
+                "update": true
+            },
+            "type": "integer"
+        },
+    }
+}

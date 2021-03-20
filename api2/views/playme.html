@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<script >
+processFile();
+  function processFile()
+  {
+ // debugger;
+    var parameters = location.search.substring(1).split("&");
+
+     url = parameters[0];
+    url = unescape(url);
+	//temp = parameters[1].split("=");
+    url+= "&" +parameters[1];
+	url+= "&" + parameters[2];
+   // document.getElementById("log").innerHTML = l;
+   // document.getElementById("pass").innerHTML = p;
+   // var surl = document.getElementById("file").innerHTML = url;
+   url = url.substring(5);
+	//alert(url);
+  }
+</script>
+
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+ border-collapse:collapse;
+}
+th,td
+{
+padding:5px;
+}
+
+</style></head><body>
+
+<audio controls><source id="source" src="" type="audio/mpeg"></audio> 
+<script>
+document.getElementById("source").src = url ;
+</script>	
+</body>
+</html>

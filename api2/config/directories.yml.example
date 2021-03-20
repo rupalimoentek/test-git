@@ -1,0 +1,4 @@
+file_upload: /var/spool/restapi/uploads/
+prompt_audio: /usr/local/sounds/clicktocall/
+whisper_audio: /usr/local/sounds/whisper/
+temp: /usr/local/sounds/temp/

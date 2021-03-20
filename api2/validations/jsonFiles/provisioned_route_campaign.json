@@ -1,0 +1,61 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+			"insert" : false,
+			"update" : true
+			},
+			"type" : "integer"
+		},
+		"start_date" : 
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "datetime"
+		},
+		"end_date" : 
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "datetime"
+		},
+		"date_changed" : 
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"campaign_status" : 
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false,
+				"status" : true
+			},
+			"type" : "string",
+			"values" : ["active", "inactive", "deleted"]
+		},
+		"timezone" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+		}
+	}
+}

@@ -1,0 +1,203 @@
+{
+	"params" :
+	{
+		"ct_user_id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"user_ext_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"ct_user_ou_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"role_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"first_name" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"last_name" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"username" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "email"
+		},
+		"user_title" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"primary_phone" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "phone_number"
+		},
+		"mobile_phone" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "phone_number"
+		},
+		"add_to_campaigns" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"add_user_to_camapains" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+        "system_admin" :
+        {
+            "required" :
+            {
+                "insert" : false,
+                "update" : false
+            },
+            "type" : "boolean"
+        },
+		"user_status" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"password" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"timezone" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"domain" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"is_increment" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"is_call_from_duh" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"is_from_drip" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+
+		"agent_ring_to" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"agent_code" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		}
+	}
+}

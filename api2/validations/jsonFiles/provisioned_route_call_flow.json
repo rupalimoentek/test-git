@@ -1,0 +1,110 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"tracking_number" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "phone_number"
+		},
+		"organizational_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"ringto" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "phone_number"
+		},
+		"route_type" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["geo", "ivr", "simple", "voicemail"]
+		},
+		"play_disclaimer" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["before", "never" , "after"]
+		},
+		"record_until" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "datetime",
+			"allow_empty" : true
+		},
+		"whisper_enabled" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"whisper_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["", "text"]
+		},
+		"whisper_message" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"status" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["active", "inactive"]
+		}
+	}
+}

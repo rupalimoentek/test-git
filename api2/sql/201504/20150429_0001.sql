@@ -1,0 +1,1 @@
+INSERT INTO industry(industry_name,industry_group) VALUES ('Institution','Education'),('Marketing','Education')

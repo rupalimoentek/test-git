@@ -1,0 +1,52 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "integer"
+		},
+		"location_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"import" : false
+			},
+			"type" : "integer"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"import" : true
+			},
+			"type" : "integer"
+		},
+		"name" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"import" : true
+			},
+			"type" : "string"
+		}
+	},
+	"multipart" :
+	{
+		"file" :
+		{
+			"required" :
+			{
+				"import" : true
+			},
+			"type" : "multipart",
+			"file_types" : ["text/csv", "application/vnd.ms-excel", "application/octet-stream"]
+		}
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"location_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer",
+			"ignore" : true
+		},
+		"location" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"max_length" : 100
+		},
+		"address" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"max_length" : 100
+		},
+		"city" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"max_length" : 50
+		},
+		"state" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "stateabbr",
+			"min_length" : 2,
+			"max_length" : 2
+		},
+		"zip" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "zip"
+		},
+		"phone" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "phone_number"
+		},
+		"location_ivr_route_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer",
+			"ignore" : true
+		},
+		"claimed_zip" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "commaSeparatedZip"
+		},
+		"claimed_states" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "commaSeparatedZip"
+		}
+	}
+}

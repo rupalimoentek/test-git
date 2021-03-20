@@ -1,0 +1,25 @@
+{
+    "params" : {
+        "component_id" : {
+            "required" : {
+                "insert": false,
+                "update": true
+            },
+            "type" : "integer"
+        },
+        "count_total" : {
+            "required" : {
+                "insert": false,
+                "update": true
+            },
+            "type" : "integer"
+        },
+        "secondary_total" : {
+            "required" : {
+                "insert": false,
+                "update": true
+            },
+            "type" : "integer"
+        }
+    }
+}

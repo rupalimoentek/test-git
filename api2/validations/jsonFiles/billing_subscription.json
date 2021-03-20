@@ -1,0 +1,25 @@
+{
+    "params" : {
+        "org_unit_id" : {
+            "required" : {
+                "insert" : true,
+                "delete" : true
+            },
+            "type" : "integer"
+        },
+        "subscription_external_id" : {
+            "required": {
+                "insert": true,
+                "delete": true
+            },
+            "type": "integer"
+        },
+        "ext_billing_id" : {
+            "required" : {
+                "insert" : true,
+                "delete" : false
+            },
+            "type" : "string"
+        }
+    }
+}

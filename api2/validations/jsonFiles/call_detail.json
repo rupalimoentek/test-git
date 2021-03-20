@@ -1,0 +1,53 @@
+{
+    "params": {
+        "start": {
+            "required": {
+                "read": false
+            },
+            "type": "integer"
+        },
+        "limit": {
+            "required": {
+                "read": false
+            },
+            "type": "integer"
+        },
+        "sort_by": {
+            "required": {
+                "read": false
+            },
+            "type": "string",
+            "values": ["id", "tracking_number", "ringto_number"]
+        },
+        "sort_order": {
+            "required": {
+                "read": false
+            },
+            "type": "string",
+            "values": ["desc", "asc"]
+        },
+        "criteria": {
+            "required": {
+                "read": false
+            },
+            "type": "json",
+            "validator": "callDetailCriteria"
+        },
+        "ct_user_id": {
+            "required": {
+                "read": true,
+                "insert": true,
+                "update": true
+            },
+            "type": "string"
+        },
+        "call_id": {
+            "required": {
+                "read": true,
+                "insert": true,
+                "update": true
+            },
+            "type": "integer"
+        }
+    }
+}

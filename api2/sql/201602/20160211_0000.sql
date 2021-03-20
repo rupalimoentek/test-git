@@ -1,0 +1,3 @@
+ALTER TABLE provisioned_route ALTER COLUMN provisioned_route_name SET DATA TYPE VARCHAR(96);
+ALTER TABLE webhook ALTER COLUMN target_url SET DATA TYPE VARCHAR(2083);
+

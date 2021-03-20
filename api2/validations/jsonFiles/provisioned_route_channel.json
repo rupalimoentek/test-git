@@ -1,0 +1,14 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+			"insert" : true,
+			"update" : true
+			},
+			"type" : "integer"
+		}
+	}
+}

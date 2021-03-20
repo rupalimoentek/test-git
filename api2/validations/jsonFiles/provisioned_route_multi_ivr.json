@@ -1,0 +1,33 @@
+{
+	"params" :
+	{
+		"ivrActions" :
+			{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "array"
+        },
+        "message_type": 
+        {
+            "required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string",
+			"values" : ["text", "file"]
+        },
+        "message":
+        {
+            "required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+        }
+	}
+}

@@ -1,0 +1,1 @@
+ALTER TABLE reports ADD COLUMN ca_looker_id INTEGER DEFAULT NULL;

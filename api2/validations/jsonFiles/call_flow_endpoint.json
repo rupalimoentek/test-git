@@ -1,0 +1,13 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"read" : true
+			},
+			"type" : "integer"
+		}
+	}
+}

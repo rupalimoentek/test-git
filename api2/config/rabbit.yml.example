@@ -1,0 +1,11 @@
+development:
+ user: <<user>>
+ password: <<password>>
+ host: <<host>>
+ port: 5672
+ vhost: <<vhost>>
+ queue: task_queue
+ call_flow_queue: call_flow_queue
+ port_number_queue: port_number_queue
+ report:
+  queue: report_queue

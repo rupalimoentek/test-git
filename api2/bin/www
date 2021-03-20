@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('scotttest1'),
+	app = require('../app'),
+	fs = require('fs'),
+	yaml = require("js-yaml"),
+	conf = yaml.load(fs.readFileSync('config/config.yml')),
+    envVar = process.env.NODE_ENV;
+/*https = require('https'),
+constants = require('constants');
+*/
+
+app.set('port', process.env.PORT || conf[envVar].port);
+
+var server = app.listen(app.get('port'), function () {
+	console.log('Env: ' + envVar);
+	console.log('Ready to rock and roll on port ' + server.address().port);
+	debug('Express server listening on port ' + server.address().port);
+});
+
+server.on('connection', function (socket) {
+	socket.setTimeout(600 * 60 * 10); // now works perfectly...
+});
+/*if (envVar == 'local') {
+	var server = app.listen(app.get('port'), function() {
+		console.log('Env: ' + envVar);
+	    console.log('Ready to rock and roll on port ' + server.address().port);
+	 	debug('Express server listening on port ' + server.address().port);
+	});
+} else {
+
+	var options = {
+		key:    fs.readFileSync(conf[envVar].key),
+		cert:   fs.readFileSync(conf[envVar].cert),
+		secureProtocol: 'SSLv23_method',
+		secureOptions: constants.SSL_OP_NO_SSLv3
+	};
+
+
+	var server = https.createServer(options, app).listen(app.get('port'), conf[envVar].host, function() {
+		console.log('Ready to rock and roll on port ' + server.address().port);
+	  debug('Express server listening on port ' + server.address().port);
+	});
+}*/
+
+
+
+

@@ -1,0 +1,58 @@
+{
+	"params" :
+	{
+		"ringto" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "phone_number"
+		},
+		"percentage" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"overflowNumbers" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			}
+		},
+		"activateVoicemail" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "boolean"
+		},
+		"simultaneousRings" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "boolean"
+		},
+		"route_order" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		}		
+	}
+}

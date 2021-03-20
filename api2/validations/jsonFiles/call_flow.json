@@ -1,0 +1,309 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"provisioned_route_id" :
+		{
+			"required" :
+			{
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"tracking_number" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"ignore" : false,
+			"type" : "phone_number"
+		},
+		"organizational_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"ringto" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "call_flow_phone_number"
+		},
+		"route_type" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["geo", "ivr", "simple", "PercentageBasedRoute", "outbound", "voicemail", "schedule"]
+		},
+		"play_disclaimer" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["before", "never" , "after"]
+		},
+		"record_until" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "datetime",
+			"allow_empty" : true
+		},
+		"whisper_enabled" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"whisper_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["", "text", "file"]
+		},
+		"whisper_message" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"message_enabled" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer",
+			"values" : [0,1]
+		},
+		"message_type" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true,
+			"values" : ["", "text", "file"]
+		},
+		"message" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"status" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["active", "inactive","referral"]
+		},
+
+		"voicemail_type" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true,
+			"values" : ["", "text", "file"]
+		},
+		"voicemail_Greetings_Text" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"allow_empty" : true
+		},
+		"voicemail_rings_count" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+
+		"number_quantity" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"webhook_id" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"			
+		},
+		"customSourceList" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "object"
+		},
+		"spam_active" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"isCallFromMigrationTool" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"overflowNumbers" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "object"
+		},
+		"isSimultaneousRing" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"vm_type" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string",
+			"values" : ["text", "file"]
+		},
+		"vm_enabled" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"vm_message" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"hunt_option" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"dnis_as_cid" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "string"
+		},
+		"post_IVR_data" :
+		{	
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "object"
+		},
+		"sms_enabled" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "boolean"
+		}
+	}
+}

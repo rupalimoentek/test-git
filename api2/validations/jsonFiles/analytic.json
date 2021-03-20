@@ -1,0 +1,69 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "integer"
+		},
+		"duration" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false
+			},
+			"type" : "integer"
+		},
+		"tracking_id" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : true
+			},
+			"type" : "string"
+		},
+		"all_routes" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"all_calls" :
+		{
+			"required" :
+			{
+				"insert" : true,
+				"update" : false
+			},
+			"type" : "boolean"
+		},
+		"status" :
+		{
+			"required" :
+			{
+				"insert" : false,
+				"update" : false,
+				"status" : true
+			},
+			"type" : "string",
+			"values" : ["active", "inactive"]
+		}
+	}
+}

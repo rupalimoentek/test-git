@@ -1,0 +1,42 @@
+{
+	"params" :
+	{
+		"id" :
+		{
+			"required" :
+			{
+				"delete" : true
+			},
+			"type" : "integer"
+		},
+		"org_unit_id" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "integer"
+		},
+		"message_type" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "string",
+			"values" : ["prompt", "whisper", "voicemail"]
+		}
+	},
+	"multipart" :
+	{
+		"file" :
+		{
+			"required" :
+			{
+				"insert" : true
+			},
+			"type" : "multipart",
+			"file_types" : ["audio/wav", "audio/mp3", "audio/mp4", "video/mp4", "audio/mpeg", "audio/x-wav"]
+		}
+	}
+}
